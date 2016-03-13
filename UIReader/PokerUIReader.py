@@ -2,16 +2,17 @@
 Created on 6 Mar 2016
 
 @author: Behzad
-yoyo_domoro
-fences84
 
-1. Take a screenshot of pokerstars poker table
-2. Read dealt hand
+1. Take a screenshot of poker table --DONE
+2. Write algorithm to 
+3 Read dealt hand
     a. Crop to hand position
 
-3. Read current table cards
-4. Identify when action needs to be taken.
-5. Read chip balance
+
+4. Read current table cards
+5. Identify when action needs to be taken.
+6. Read chip balance
+7. Write algorithm
 
 Algorithm:
 - Take picture of screen
