@@ -4,7 +4,8 @@ Created on 6 Mar 2016
 @author: Behzad
 
 1. Take a screenshot of poker table --DONE
-2. Write algorithm to 
+2. We need to get coordinates or sub-windows and have them expressed as a percentage
+    of the parent window dimensions.
 3 Read dealt hand
     a. Crop to hand position
 
