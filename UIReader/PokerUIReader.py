@@ -4,8 +4,12 @@ Created on 6 Mar 2016
 @author: Behzad
 
 1. Take a screenshot of poker table --DONE
+<<<<<<< HEAD
 2. We need to get coordinates or sub-windows and have them expressed as a percentage
     of the parent window dimensions.
+=======
+2. Write algorithm to 
+>>>>>>> c7772c6d402c0cac9e5a0ee55e0b76bb175124b1
 3 Read dealt hand
     a. Crop to hand position
 
@@ -82,7 +86,10 @@ def takePokerWindowScreenshot(window):
     dcObj = win32ui.CreateDCFromHandle(wDC)
     cDC = dcObj.CreateCompatibleDC()
     dimensions = getClientDimensions(windowHandle)
+<<<<<<< HEAD
     print(dimensions)
+=======
+>>>>>>> c7772c6d402c0cac9e5a0ee55e0b76bb175124b1
     width = dimensions[2]
     height = dimensions[3]
 
@@ -103,6 +110,7 @@ def takePokerWindowScreenshot(window):
     win32gui.ReleaseDC(windowHandle, wDC)
     win32gui.DeleteObject(dataBitMap.GetHandle())
 
+<<<<<<< HEAD
 
 def getTableCardsBMP(window):
     '''
@@ -170,11 +178,14 @@ def getTableCardsBMP(window):
     return tableCardsBMPArray
 
     
+=======
+>>>>>>> c7772c6d402c0cac9e5a0ee55e0b76bb175124b1
 if __name__ == '__main__':
     pokerWindows = findOpenPokerWindows()
     childWindows=[]
     coordinates = []
     
+<<<<<<< HEAD
     print(257/766)
     print(201/518)
     print(" ")
@@ -188,11 +199,17 @@ if __name__ == '__main__':
     print(476/766, 205/518, 14, 32)
 
     
+=======
+>>>>>>> c7772c6d402c0cac9e5a0ee55e0b76bb175124b1
     childWindows = getChildWindows(pokerWindows)
     
     for window in pokerWindows:
         takePokerWindowScreenshot(window)
+<<<<<<< HEAD
         tableCardsBMP = getTableCardsBMP(window)
+=======
+    
+>>>>>>> c7772c6d402c0cac9e5a0ee55e0b76bb175124b1
  
     '''
     for window in childWindows:
