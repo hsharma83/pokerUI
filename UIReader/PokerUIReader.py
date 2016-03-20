@@ -86,10 +86,7 @@ def takePokerWindowScreenshot(window):
     dcObj = win32ui.CreateDCFromHandle(wDC)
     cDC = dcObj.CreateCompatibleDC()
     dimensions = getClientDimensions(windowHandle)
-<<<<<<< HEAD
     print(dimensions)
-=======
->>>>>>> c7772c6d402c0cac9e5a0ee55e0b76bb175124b1
     width = dimensions[2]
     height = dimensions[3]
 
@@ -110,7 +107,6 @@ def takePokerWindowScreenshot(window):
     win32gui.ReleaseDC(windowHandle, wDC)
     win32gui.DeleteObject(dataBitMap.GetHandle())
 
-<<<<<<< HEAD
 
 def getTableCardsBMP(window):
     '''
@@ -177,15 +173,11 @@ def getTableCardsBMP(window):
     
     return tableCardsBMPArray
 
-    
-=======
->>>>>>> c7772c6d402c0cac9e5a0ee55e0b76bb175124b1
 if __name__ == '__main__':
     pokerWindows = findOpenPokerWindows()
     childWindows=[]
     coordinates = []
     
-<<<<<<< HEAD
     print(257/766)
     print(201/518)
     print(" ")
@@ -198,18 +190,13 @@ if __name__ == '__main__':
     print(422/766, 205/518, 14, 32)
     print(476/766, 205/518, 14, 32)
 
-    
-=======
->>>>>>> c7772c6d402c0cac9e5a0ee55e0b76bb175124b1
+
     childWindows = getChildWindows(pokerWindows)
     
     for window in pokerWindows:
         takePokerWindowScreenshot(window)
-<<<<<<< HEAD
         tableCardsBMP = getTableCardsBMP(window)
-=======
-    
->>>>>>> c7772c6d402c0cac9e5a0ee55e0b76bb175124b1
+
  
     '''
     for window in childWindows:
